@@ -7,4 +7,12 @@
     <?php wp_head(); ?>
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="/ " class="beranda">Beranda</a></li>
+            <li><a href="/roaster" class="roster">Roaster</a></li>
+            <li><a href="/gallery" class="gallery">Gallery</a></li>
+            <li><a href="/kontak" class="kontak">Kontak</a></li>
+        </ul>
+    </nav>
    

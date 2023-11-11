@@ -10,6 +10,8 @@ function aqso_register_styles(){
 
     // Karena di wordpress udah tertanem jquery maka kita hanya perlu manggil file-nya aja, gak perlu didownload file-nya
     wp_enqueue_script( "jquery");
+
+    wp_enqueue_script('script_js', get_template_directory_uri() . '/script/script.js', array('jquery'), rand(111,9999),true);
 }
 
 add_action( "wp_enqueue_scripts", "aqso_register_styles" );
