@@ -2,12 +2,17 @@
     padding: 0;
     margin: 0;
 }
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
+
 
 :root{
     --orange: #F07F1A;
     --biru: #1C1565;
 
     /*font size */
+    --putih: #FFFFFF;
+
+    /* font size */
     --text-xs: 12px;
     --text-sm: 14px;
     --text-normal: 16px; 
@@ -65,4 +70,111 @@ li>a:hover{
     text-decoration: none;
     font-size: 30px;
     color: white;
+    --text-9xl: 128px; 
+}
+
+body{
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+
+/*=================================================*/
+/*==================== BERANDA ====================*/
+/*=================================================*/
+
+/*====================*/
+/*===== MAINHERO =====*/
+/*====================*/
+
+.mainhero{
+    width: 100%;
+    height: 40vw;
+
+    padding: 32px 16px;
+
+    background-color: var(--biru);
+}
+.mainhero .mainhero-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+}
+.mainhero .mainhero-container img{
+    width: 60%;
+}
+
+/*===================*/
+/*===== ROSTERS =====*/
+/*===================*/
+
+.rosters .header{
+    padding: 100px;
+
+    background-color: var(--orange);
+    background-size: contain;
+    background-position: center;
+}
+.rosters .header h2{
+    text-align: center;
+    font-size: var(--text-6xl);
+    color: var(--putih);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*==================*/
+/*===== FOOTER =====*/
+/*==================*/
+
+footer{
+    background-color: var(--orange);
+    padding: 32px 16px;
+}
+footer .footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 32px;
+}
+footer .footer-container .daftar{
+    width: 50%;
+}
+footer .footer-container h3{
+    font-size: var(--text-5xl);
+    font-weight: 500;
+    color: var(--putih);
+}
+footer .footer-container p{
+    font-size: var(--text-normal);
+    font-weight: 400;
+    color: var(--putih);
+}
+footer .footer-container .sparing{
+    width: 50%;
 }
