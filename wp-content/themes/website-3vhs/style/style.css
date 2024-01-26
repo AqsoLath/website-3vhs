@@ -1,4 +1,6 @@
 /* @import url('https://fonts.cdnfonts.com/css/helvetica-neue-55'); */
+@import url('https://db.onlinewebfonts.com/c/9bfe4a99593cfe1964b1c6b7c55c254e?family=Compacta+ICG');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
     padding: 0;
@@ -7,10 +9,11 @@
 }
 
 :root{
-    --orange: #F07F1A;
-    --biru: #1C1565;
+    --orange1: #F07F1A;
 
-    /*font size */
+    --biru1: #1C1565;
+    --biru2: #171250;
+
     --putih: #FFFFFF;
 
     /* font size */
@@ -27,13 +30,27 @@
     --text-7xl: 72px; 
     --text-8xl: 96px; 
     --text-9xl:128px;
+
+    /* font family */
+    --compacta: "Compacta ICG", cursive;
+    --helvetica-neue: 'Helvetica Neue', sans-serif;
+    --roboto-condensed : "Roboto Condensed", sans-serif;
+
 }
 
 
 
 /* navbar */
 nav{
-    background-color:var(--biru);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1001;
+
+    width: 100%;
+
+    background-color:var(--biru1);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -90,7 +107,7 @@ nav .nav-container{
 
     width: 0%;
     height: 3px;
-    background-color: var(--orange);
+    background-color: var(--orange1);
 
     transition: .25s;
 }
@@ -104,6 +121,10 @@ body{
     font-family: 'Helvetica Neue', sans-serif;
 }
 
+main{
+    margin-top: 80px;
+}
+
 
 /*=================================================*/
 /*==================== BERANDA ====================*/
@@ -114,24 +135,86 @@ body{
 /*====================*/
 
 .mainhero{
+    position: relative;
+
     width: 100%;
-    height: 40vw;
+    min-height: 42vw;
 
     padding: 32px 16px;
 
-    background-color: var(--biru);
+    background-color: var(--biru1);
 }
-.mainhero .mainhero-container{
+.mainhero .bg-konten-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+
+    height: 100%;
+    width: 60%;
+
+    background-color: rgba(0, 0, 0, 0.30);
+}
+.mainhero .konten{
+    position: relative;
+    z-index: 10;
+}
+.mainhero .konten .konten-box{
+    width: 60%;
+    padding: 20px 32px;
+}
+.mainhero .konten .konten-box h1{
+    font-size: 200px;
+    font-family: var(--compacta);
+    color: var(--orange1);
+
+    line-height: 70%;
+
+    text-transform: uppercase;
+}
+.mainhero .konten .konten-box h2{
+    font-size: 120px;
+    font-family: var(--compacta);
+    color: var(--putih);
+
+    text-transform: uppercase;
+}
+.mainhero .konten .konten-box p{
+    font-size: var(--text-normal);
+    font-family: var(--helvetica-neue);
+    color: var(--putih);
+}
+
+.button-orange{
     display: flex;
-    justify-content: center;
     align-items: center;
 
-    width: 100%;
-    height: 100%;
+    width: fit-content;
+
+    padding: 16px 50px ;
+
+    font-family: var(--roboto-condensed);
+    font-size: var(--text-xl);
+    font-weight: 600;
+    color: var(--putih);
+
+    background-color: var(--orange1);
+
+    text-decoration: none;
+    text-transform: uppercase;
+    transform: skewX(-15deg);
+
+    /* transition: .2s cubic-bezier(0.785, 0.135, 0.15, 0.86); */
 }
-.mainhero .mainhero-container img{
-    width: 60%;
+.button-orange div{
+    display: inline-block;
+    transform: skewX(15deg);
 }
+.button-orange:hover{
+    color: var(--putih);
+    /* transform: skewX(0); */
+}
+
 
 /*===================*/
 /*===== ROSTERS =====*/
@@ -140,7 +223,7 @@ body{
 .rosters .header{
     padding: 100px;
 
-    background-color: var(--orange);
+    background-color: var(--orange1);
     background-size: contain;
     background-position: center;
 }
@@ -180,7 +263,7 @@ body{
 /*==================*/
 
 footer{
-    background-color: var(--orange);
+    background-color: var(--orange1);
     padding: 32px 16px;
 }
 footer .footer-container{
