@@ -13,8 +13,10 @@
 
     --biru1: #1C1565;
     --biru2: #171250;
+    --biru3: #383090;
 
     --putih: #FFFFFF;
+    --hitam: #232B2B;
 
     /* font size */
     --text-xs: 12px;
@@ -36,11 +38,35 @@
     --helvetica-neue: 'Helvetica Neue', sans-serif;
     --roboto-condensed : "Roboto Condensed", sans-serif;
 
+    /* easing */
+    --ease-in-out-quint: cubic-bezier(0.83, 0, 0.17, 1);
+}
+
+main{
+    margin-top: 70px;
+}
+
+body{
+    overflow-x: hidden;
+    font-family: var(--helvetica-neue);
+}
+
+/*=============================*/
+/*===== COMPONENT PACKAGE =====*/
+/*=============================*/
+
+[data-aos] {
+  body[data-aos-easing="ease-in-out-quint"] &,
+  &[data-aos][data-aos-easing="ease-in-out-quint"] {
+    transition-timing-function: var(--ease-in-out-quint);
+  }
 }
 
 
 
-/* navbar */
+/*==================*/
+/*===== NAVBAR =====*/
+/*==================*/
 nav{
     position: fixed;
     top: 0;
@@ -49,17 +75,19 @@ nav{
     z-index: 1001;
 
     width: 100%;
+    /* height: 50px; */
 
     background-color:var(--biru1);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 0;
+    padding: 4px 0;
 }
 
 nav .nav-logo{
     width: 5%;
     height: 100%;
+    padding: 8px 0;
 }
 nav .nav-logo img{
     width: 100%;
@@ -86,7 +114,7 @@ nav .nav-container{
 .nav-links a{
     position: relative;
     text-decoration: none;
-    font-size: var(--text-xl);
+    font-size: var(--text-lg);
     color: white;
     transition: 200ms;
     /* font-weight: bold; */
@@ -117,13 +145,7 @@ nav .nav-container{
     width: 100%;
 }
 
-body{
-    font-family: 'Helvetica Neue', sans-serif;
-}
 
-main{
-    margin-top: 80px;
-}
 
 
 /*=================================================*/
@@ -215,23 +237,247 @@ main{
     /* transform: skewX(0); */
 }
 
+.mainhero .gambar{
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 20;
+    
+    width: 40%;
+    height: 100%;
+}
+
+.mainhero .gambar .bottom-shadow{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 50;
+
+    width: 100%;
+    height: 25%;
+    background: linear-gradient(180deg, transparent 0%, var(--biru1) 80%);
+}
+
+
+.mainhero .swiper-players {
+    width: 100%;
+    height: 100%;
+}
+
+.mainhero .swiper-players .swiper-slide{
+    text-align: center;
+    font-size: 18px;
+    /* background: #fff; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.mainhero .swiper-players .swiper-slide img{
+    width: 75%;
+    aspect-ratio: 1/1.5;
+    object-fit: cover;
+    object-position: top;
+}
+
+/*=================*/
+/*===== ABOUT =====*/
+/*=================*/
+
+.home-about {
+    position: relative;
+
+    background-color: var(--putih);
+}
+.home-about .bg-gambar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+    height: 100%;
+    width: 40%;
+    
+    background-color: var(--orange1);
+}
+
+.home-about .about-container{
+    position: relative;
+    z-index: 20;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.home-about .about-container .gambar{
+    width: 35%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home-about .about-container .gambar img{
+    width: 100%;
+}
+
+.home-about .about-container .konten{
+    width: 55%;
+
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.home-about .about-container .konten h2{
+    font-family: var(--compacta);
+    font-size: var(--text-7xl);
+    color: var(--orange1);
+}
+.home-about .about-container .konten h2 span{
+    color: var(--hitam) ;
+}
+.home-about .about-container .konten p{
+    font-family: var(--helvetica-neue);
+    font-size: var(--text-normal);
+}
+.home-about .about-container .konten .data{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.home-about .about-container .konten .data .item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 33%;
+}
+.home-about .about-container .konten .data .item h3{
+    margin-bottom: 0;
+
+    font-size: var(--text-4xl);
+    font-weight: 700;
+    color: var(--orange1);
+}
+.home-about .about-container .konten .data .item h4{
+    text-align: center;
+    font-family: var(--helvetica-neue);
+    font-size: var(--text-normal);
+    font-weight: 600;
+    font-style: italic;
+}
+
+/*===========================*/
+/*===== DIVIDER ROSTERS =====*/
+/*===========================*/
+
+.divider-rosters{
+    padding: 48px 0;
+    background-color: var(--biru3);
+}
 
 /*===================*/
 /*===== ROSTERS =====*/
 /*===================*/
 
-.rosters .header{
-    padding: 100px;
+.rosters .boys-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
 
-    background-color: var(--orange1);
-    background-size: contain;
-    background-position: center;
+.rosters .boys{
+    position: relative;
+    z-index: 30;
+    background-color: var(--biru2);
 }
-.rosters .header h2{
-    text-align: center;
-    font-size: var(--text-6xl);
-    color: var(--putih);
+.rosters .boys .gambar{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 40;
+    pointer-events: none;
 }
+
+
+.rosters .girls-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.rosters .girls{
+    position: relative;
+    z-index: 40;
+    background-color: var(--biru3);
+}
+.rosters .girls .gambar{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 50;
+    pointer-events: none;
+}
+
+.rosters .gambar,
+.rosters .konten{
+    width: 50%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rosters .gambar img{
+    width: 50%;
+    aspect-ratio: 1/1.3;
+    object-fit: cover;
+    object-position: center top;
+
+    filter: grayscale(1);
+
+    transition: 0.6s ;
+}
+
+.rosters .boys .konten h2,
+.rosters .girls .konten h2{
+    font-family: var(--compacta);
+    font-size: 240px;
+    text-transform: uppercase;
+    letter-spacing: -5px;
+
+    transition: .5s;
+}
+.rosters .boys .konten h2{
+    background: linear-gradient(to left, #D9D9D9 50%, var(--orange1) 50%) right;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+}
+.rosters .girls .konten h2{
+    background: linear-gradient(to right, #D9D9D9 50%, var(--orange1) 50%) left;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+}
+
+
+.rosters .boys:hover .gambar img,
+.rosters .girls:hover .gambar img{
+    filter: grayscale(0);
+    transition: 0.6s;
+}
+
+.rosters .boys:hover .konten h2{
+    background-position: left;
+}
+
+.rosters .girls:hover .konten h2{
+    background-position: right;
+}
+
+
+
+
 
 
 
