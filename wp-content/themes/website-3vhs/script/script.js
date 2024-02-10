@@ -11,22 +11,34 @@ var swiperPlayers = new Swiper(".mainhero .swiper-players", {
     direction: "vertical",
     loop: true,
     speed: 2000,
+    // freeMode: true,
     autoplay: {
-        delay: 500
+        delay: 500,
+        disableOnInteraction: false
     },
-    // sliderChange: function () {
-    //     console.log('awikwok');
-    // }
-
-    // pagination: {
-    //     el: ".swiper-pagination",
-    //     clickable: true,
-    // },
 });
 
-swiperPlayers.on("beforeTransitionStart", () => {
-    console.log('awikwok');
-})
+// var swiperPlayers = new Swiper(".divider-rosters .swiper-divider-rosters", {
+//     // loop: true,
+//     rewind: true,
+//     speed: 2000,
+//     freeMode: true,
+//     slidesPerView: 10,
+//     spaceBetween: 16,
+//     autoplay: {
+//         delay: 0,
+//         disableOnInteraction: false
+//     },
+//     on: {
+//         reachEnd: function () {
+//             console.log('mentok');
+//             // swiperPlayers.slideToLoop(0)
+//             // swiperPlayers.init(swiperPlayers)
+//             // swiperPlayers.setProgress(0, 0);
+//             // swiperPlayers.update()
+//         }
+//     }
+// });
 
 
 // if (urlLocation == '/') {
@@ -43,3 +55,16 @@ swiperPlayers.on("beforeTransitionStart", () => {
 //     contact[0].classList.add("activate");
 // }
 
+(function ($) {
+    function runMarquee() {
+        let marqueeWrapper = $(".marquee")
+        let marqueeItem = $(".marquee span");
+
+
+        // setTimeout(runMarquee, 500);
+    }
+    $(document).ready(function () {
+        runMarquee();
+    })
+
+})(jQuery);

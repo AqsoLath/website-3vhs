@@ -51,6 +51,10 @@ body{
     font-family: var(--helvetica-neue);
 }
 
+a{
+    text-decoration: none !important;
+}
+
 /*=============================*/
 /*===== COMPONENT PACKAGE =====*/
 /*=============================*/
@@ -273,7 +277,7 @@ nav .nav-container{
     align-items: flex-end;
 }
 .mainhero .swiper-players .swiper-slide img{
-    width: 75%;
+    height: 85%;
     aspect-ratio: 1/1.5;
     object-fit: cover;
     object-position: top;
@@ -371,8 +375,37 @@ nav .nav-container{
 /*===========================*/
 
 .divider-rosters{
-    padding: 48px 0;
+    /* padding: 24px 0; */
     background-color: var(--biru3);
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+}
+.divider-rosters .swiper-wrapper{
+    transition-timing-function: linear;
+}
+
+.divider-rosters .swiper-slide{
+    width: fit-content !important; 
+}
+.divider-rosters span{
+    font-family: var(--compacta);
+    font-size: 64px;
+    color: var(--orange1);
+    display: inline-block;
+    animation: marquee 15s linear infinite;
+
+}
+
+
+@keyframes marquee {
+    0% {
+    transform: translateX(0);
+    }
+    100% {
+    transform: translateX(-100vw);
+    }
 }
 
 /*===================*/

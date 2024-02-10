@@ -62,7 +62,7 @@
         <div class="bg-gambar"></div>
         <div class="about-container container">
             <div class="gambar">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-sevory.png" alt="Logo SMKN 3 Kota Bekasi">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-smk3.png" alt="Logo SMKN 3 Kota Bekasi">
             </div>
             <div class="konten">
                 <h2>We Are Dynamic Basketball Club of <span>SMKN 3 Kota Bekasi</span></h2>
@@ -89,33 +89,39 @@
     <!--===== DIVIDER ROSTERS =====-->
     <!--===========================-->
 
-    <div class="divider-rosters"></div>
+    <div class="divider-rosters">
+        <span>ROSTERS // ROSTERS // ROSTERS // ROSTERS // ROSTERS // ROSTERS // ROSTERS // ROSTERS // ROSTERS // ROSTERS // ROSTERS // ROSTERS // ROSTERS // ROSTERS // ROSTERS // ROSTERS // ROSTERS //</span>
+    </div>
+
 
     <!--===================-->
     <!--===== ROSTERS =====-->
     <!--===================-->
     <div class="rosters">
         <div class="boys">
-            <div class="boys-container container">
-                <div class="konten" data-aos="fade-right" data-aos-delay="250" data-aos-anchor=".rosters .boys" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-out-quint">
-                    <h2>Boys</h2>
+            <a href="/boys">
+                <div class="boys-container container">
+                    <div class="konten" data-aos="fade-right" data-aos-delay="250" data-aos-anchor=".boys .gambar" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-out-quint">
+                        <h2>Boys</h2>
+                    </div>
+                    <div class=" gambar" data-aos="fade-right" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-out-quint">
+                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/players-boys/kenny-1.png" alt="kenny 1">
+                    </div>
                 </div>
-                <div class=" gambar" data-aos="fade-right" data-aos-anchor=".rosters .boys" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-out-quint">
-                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/players-boys/kenny-1.png" alt="kenny 1">
-                </div>
-            </div>
+            </a>
         </div>
         <div class="girls">
-            <div class="girls-container container">
-                <div class="gambar" data-aos="fade-left" data-aos-anchor=".rosters .girls" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-out-quint">
-                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/players-boys/kenny-1.png" alt="kenny 1">
+            <a href="/girls">
+                <div class="girls-container container">
+                    <div class="gambar" data-aos="fade-left" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-out-quint">
+                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/players-boys/kenny-1.png" alt="kenny 1">
+                    </div>
+                    <div class="konten" data-aos="fade-left" data-aos-delay="250" data-aos-anchor=".girls .gambar" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-out-quint">
+                        <h2>Girls</h2>
+                    </div>
                 </div>
-                <div class="konten" data-aos="fade-left" data-aos-delay="250" data-aos-anchor=".rosters .girls" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-out-quint">
-                    <h2>Girls</h2>
-                </div>
-            </div>
+            </a>
         </div>
-
     </div>
 
 </main>
