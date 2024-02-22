@@ -37,7 +37,7 @@
     --compacta: "Compacta ICG", cursive;
     --helvetica-neue: 'Helvetica Neue', sans-serif;
     --roboto-condensed : "Roboto Condensed", sans-serif;
-    --outfit: "Outfit", sans-serif
+    --outfit: "Outfit", sans-serif;
 
     /* easing */
     --ease-in-out-quint: cubic-bezier(0.83, 0, 0.17, 1);
@@ -50,7 +50,7 @@
 /*===== FOOTER =====*/
 /*==================*/
 
-/* footer {
+footer {
   background-color: var(--biru2);
   height: 817px;
   display: flex;
@@ -80,7 +80,7 @@
 }
 
 .contact h2 {
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family:var(--outfit);
   font-size: 40px;
   font-weight: 400;
   color: var(--orange1);
@@ -107,4 +107,4 @@
 
 .h-50{
   height: 50px;
-} */
+}
