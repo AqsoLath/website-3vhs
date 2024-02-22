@@ -1,4 +1,4 @@
-/* @import url('https://fonts.cdnfonts.com/css/helvetica-neue-55'); */
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
 @import url('https://db.onlinewebfonts.com/c/9bfe4a99593cfe1964b1c6b7c55c254e?family=Compacta+ICG');
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
@@ -50,7 +50,7 @@
 /*===== FOOTER =====*/
 /*==================*/
 
-footer {
+/* footer {
   background-color: var(--biru2);
   height: 817px;
   display: flex;
@@ -107,4 +107,4 @@ footer {
 
 .h-50{
   height: 50px;
-}
+} */
