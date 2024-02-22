@@ -80,7 +80,7 @@ footer {
 }
 
 .contact h2 {
-  font-family: var(--outfit);
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
   font-size: 40px;
   font-weight: 400;
   color: var(--orange1);
