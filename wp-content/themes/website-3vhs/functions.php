@@ -10,6 +10,7 @@ function aqso_register_styles()
     wp_enqueue_style('swiper_css', "https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css");
     wp_enqueue_style('aos_css', "https://unpkg.com/aos@2.3.1/dist/aos.css");
     wp_enqueue_style("aqsoOwnCss", get_template_directory_uri() . "/style/style.css", "", "1.0", "all");
+    wp_enqueue_style("tailwindcss", get_template_directory_uri() . "/style/output.css", "", "1.0", "all");
 
 
     // ENQUE SCRIPT

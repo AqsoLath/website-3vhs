@@ -1,4 +1,3 @@
- 
 
     <footer>
         <div class="container footer-container">
@@ -6,7 +5,7 @@
                 <h3>Registrasi/Pendaftaran</h3>
                 <p>(Khusus Siswa/i SMKN 3 Kota Bekasi)</p>
             </div>
-            <div class="sparing">
+            <div class="sparing text-sm">
                 <h3>Info Sparing/Undangan</h3>
             </div>
         </div>
