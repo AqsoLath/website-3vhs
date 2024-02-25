@@ -44,6 +44,7 @@
 
 main{
     margin-top: 70px;
+    min-height: calc(100vh - 70px);
 }
 
 body{
@@ -311,6 +312,10 @@ nav .nav-container{
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 .home-about .about-container .gambar{
     width: 35%;
@@ -326,8 +331,8 @@ nav .nav-container{
 .home-about .about-container .konten{
     width: 55%;
 
-    padding-top: 48px;
-    padding-bottom: 48px;
+    /* padding-top: 48px;
+    padding-bottom: 48px; */
     padding-left: 16px;
     padding-right: 16px;
 }
@@ -358,7 +363,7 @@ nav .nav-container{
 .home-about .about-container .konten .data .item h3{
     margin-bottom: 0;
 
-    font-size: var(--text-4xl);
+    font-size: var(--text-6xl);
     font-weight: 700;
     color: var(--orange1);
 }
@@ -454,6 +459,7 @@ nav .nav-container{
 .rosters .gambar,
 .rosters .konten{
     width: 50%;
+    height: 100%;
     
     display: flex;
     justify-content: center;
@@ -461,7 +467,10 @@ nav .nav-container{
 }
 
 .rosters .gambar img{
-    width: 50%;
+    position: absolute;
+    bottom: 0;
+
+    height: 130%;
     aspect-ratio: 1/1.3;
     object-fit: cover;
     object-position: center top;
@@ -469,6 +478,12 @@ nav .nav-container{
     filter: grayscale(1);
 
     transition: 0.6s ;
+}
+.rosters .boys .gambar img{
+    left: 20%;
+}
+.rosters .girls .gambar img{
+    right: 20%;
 }
 
 .rosters .boys .konten h2,
@@ -509,11 +524,304 @@ nav .nav-container{
 }
 
 
+/*======================*/
+/*===== INTERESTED =====*/
+/*======================*/
+
+.interested-join .interested{
+    background-color: var(--orange1);
+    padding: 32px 0;
+}
+.interested-join .interested h3{
+    margin: 0;
+
+    text-align: center;
+    font-family: var(--compacta);
+    font-size: 100px;
+    color: var(--putih);
+    text-transform: uppercase;
+}
+
+.interested-join .join{
+    background-color: var(--putih);
+    padding: 32px 0;
+    text-align: center;
+
+}
+.interested-join .join h3{
+    text-align: center;
+    font-family: var(--helvetica-neue);
+    font-size: var(--text-4xl);
+    font-weight: bold;
+}
+.interested-join .join a{
+    padding: 0 32px;
+    background-color: var(--orange1);
+
+    font-family: var(--compacta);
+    font-size: var(--text-6xl);
+    color: var(--putih);
+    text-transform: uppercase;
+
+}
 
 
 
+/*=================================================*/
+/*==================== ROSTERS ====================*/
+/*=================================================*/
+main#rosters-boys{
+    background-color: var(--biru1);
+}
+
+/*=========================*/
+/*===== ROSTERS LINKS =====*/
+/*=========================*/
+.rosters-links{
+    padding: 24px 0;
+}
+.rosters-links .links-wrapper{
+    display: flex;
+    align-items: center;
+}
+.rosters-links .links-wrapper a{
+    font-family: var(--compacta);
+    font-size: 150px;
+    color: var(--putih);
+    text-transform: uppercase;
+    transition: all .6s;
+}
+.rosters-links .links-wrapper a.active{
+    background-color: var(--orange1);
+}
+.rosters-links .links-wrapper .divider{
+    margin: 0 20px;
+
+    height: 112px;
+    width: 20px;
+    background-color: #D9D9D9;
+}
 
 
+
+/*=========================*/
+/*===== ROSTERS TITLE =====*/
+/*=========================*/
+.rosters-title{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: var(--orange1);
+}
+.rosters-title h2{
+    position: relative;
+    z-index: 10;
+    margin: 0;
+    text-align: center;
+    font-size: var(--text-8xl);
+    font-weight: 700;
+    color: var(--putih);
+}
+
+
+/*===========================*/
+/*===== ROSTERS PLAYERS =====*/
+/*===========================*/
+
+.rosters-players{
+    /* padding-top: 148px; */
+    padding-top: 32px;
+}
+.rosters-players .players-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+}
+.rosters-players .players-wrapper .item{
+    position: relative;
+    background-color: var(--putih);
+    border: 2px solid transparent;
+
+    transition: .6s;
+}
+.rosters-players .players-wrapper .item .atas{
+    position: relative;
+    aspect-ratio: 1/1.4;
+
+    overflow: hidden;
+}
+.rosters-players .players-wrapper .item .atas .konten{
+    position: absolute;
+    top: 5%;
+    z-index: 10;
+
+    width: 100%;
+}
+.rosters-players .players-wrapper .item .atas .konten h4{
+    margin-bottom: 0;
+
+    text-align: center;
+    font-size: 200px;
+    font-weight: 700;
+    color: var(--biru1);
+
+    transition: .2s;
+}
+.rosters-players .players-wrapper .item .atas .konten .detail{
+    /* position: absolute; */
+    /* top: 0; */
+    z-index: 105;
+
+    width: 60%;
+    height: 100%;
+    padding-left: 8px;
+
+    opacity: 0;
+
+    transition: .6s;
+}
+.rosters-players .players-wrapper .item .atas .konten .detail .detail-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-bottom: 4px;
+    margin-bottom: 4px;
+    border-bottom: 1px solid var(--putih);
+}
+.rosters-players .players-wrapper .item .atas .konten .detail .detail-item h5{
+    width: 50%;
+    margin: 0;
+    
+    font-size: var(--text-xl);
+    font-weight: 600;
+    color: var(--putih);
+    white-space: nowrap;
+}
+.rosters-players .players-wrapper .item .atas .konten .detail .detail-item h6{
+    width: 50%;
+    margin: 0;
+    margin-left: 4px;
+    
+    font-size: var(--text-xl);
+    font-weight: 400;
+    color: var(--putih);
+    white-space: nowrap;
+}
+
+.rosters-players .players-wrapper .item .atas .foto-profil{
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+    z-index: 30;
+
+    height: 70%;
+    max-width: 100%;
+    aspect-ratio: 1/1.2;
+    object-fit: cover;
+    object-position: center top;
+
+    transition: .6s;
+}
+.rosters-players .players-wrapper .item .atas .logo-sevory{
+    position: absolute;
+    left: 80%;
+    top: 50%;
+    z-index: 50;
+
+    width: 60px;
+
+    transition: .6s;
+}
+
+.rosters-players .players-wrapper .item .bawah{
+    padding: 12px 0;
+    text-align: center;
+
+    border-top: 3px solid var(--orange1);
+
+    transition: .6s;
+}
+.rosters-players .players-wrapper .item .bawah h3{
+    margin: 0;
+
+    font-size: var(--text-4xl);
+    /* font-weight: 700; */
+    font-weight: 300;
+    color: var(--biru1);
+
+    transition: .2s;
+}
+.rosters-players .players-wrapper .item .bawah h3 strong{
+    font-weight: 700;
+}
+
+/*===== Pas dihover =====*/
+
+.rosters-players .players-wrapper .item:hover{
+    background-color: var(--biru1);
+    border-color: var(--hitam);
+}
+.rosters-players .players-wrapper .item:hover .atas .konten .detail{
+    /* z-index: 20; */
+    opacity: 1;
+}
+.rosters-players .players-wrapper .item:hover .konten h4{
+    color: var(--putih);
+}
+.rosters-players .players-wrapper .item:hover .foto-profil{
+    transform: translate(85%, 10%);
+}
+.rosters-players .players-wrapper .item:hover .logo-sevory{
+    top: 2%;
+    left: 5%;
+    transform: scale(.5);
+}
+
+
+.rosters-players .players-wrapper .item:hover .bawah{
+    background-color: var(--orange1);
+}
+.rosters-players .players-wrapper .item:hover .bawah h3{
+    color: var(--putih);
+}
+
+
+/*============================*/
+/*===== PLAYERS POSITION =====*/
+/*============================*/
+
+.players-position{
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-color: rgba(0, 0, 0, 0.30);
+}
+.players-position h2{
+    margin-bottom: 32px;
+    text-align: center;
+    font-size: var(--text-7xl);
+    font-weight: 700;
+    color: var(--putih);
+}
+.players-position .position-wrapper{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.players-position .position-wrapper .offense,
+.players-position .position-wrapper .defense{
+    width: 48%;
+}
+.players-position .position-wrapper h3{
+    margin: 0;
+    text-align: center;
+    font-size: var(--text-4xl);
+    font-weight: 400;
+    color: var(--putih);
+}
+.players-position .position-wrapper img{
+    width: 100%;
+}
 
 
 
@@ -566,4 +874,16 @@ footer .footer-container p{
 }
 footer .footer-container .sparing{
     width: 50%;
+}
+
+
+
+/*=====================================================================*/
+/*==================== RESPONSIVE MAX-WIDTH 1200px ====================*/
+/*=====================================================================*/
+
+@media (max-width: 1200px) {
+    .rosters-players .players-wrapper .item .atas .foto-profil{
+        height: 50%;
+    }
 }

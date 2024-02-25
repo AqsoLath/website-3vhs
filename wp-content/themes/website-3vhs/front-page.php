@@ -124,6 +124,24 @@
         </div>
     </div>
 
+    <!--======================-->
+    <!--===== INTERESTED =====-->
+    <!--======================-->
+
+    <div class="interested-join">
+        <div class="interested">
+            <div class="container">
+                <h3>Are you an smkn 3 student and interested to join?</h3>
+            </div>
+        </div>
+        <div class="join">
+            <div class="container">
+                <h3>If yes</h3>
+                <a href="/">Click Here</a>
+            </div>
+        </div>
+    </div>
+
 </main>
 
 <?php get_footer() ?>
