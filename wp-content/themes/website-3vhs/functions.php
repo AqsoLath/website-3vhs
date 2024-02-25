@@ -19,7 +19,7 @@ function aqso_register_styles()
     wp_enqueue_script("jquery");
     wp_enqueue_script('swiper_js', 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js', array('jquery'));
     wp_enqueue_script('aos_js', 'https://unpkg.com/aos@2.3.1/dist/aos.js', array(), '', true);
-    wp_enqueue_script('script_js', get_template_directory_uri() . '/script/script.js', array('jquery'), rand(111, 9999), true);
+    wp_enqueue_script('script_package_js', get_template_directory_uri() . '/script/script-package.js', array('jquery'), rand(111, 9999), true);
 }
 
 add_action("wp_enqueue_scripts", "aqso_register_styles");
