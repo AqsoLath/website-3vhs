@@ -16,8 +16,10 @@
             </div>
             <div class="nav-links">
                 <a href="/ " class="beranda">Beranda</a>
-                <a href="/roaster" class="roster">Roaster</a>
-                <a href="/gallery" class="gallery">Gallery</a>
+                <a href="#about" class="gallery">About</a>
+                <a href="/roster-boys" class="roster-boys">Roster Boys</a>
+                <a href="/roster-girls" class="roster-girls">Roster Girls</a>
+                <a href="/join" class="join">Join</a>
                 <a href="/kontak" class="kontak">Kontak</a>
             </div>
         </div>

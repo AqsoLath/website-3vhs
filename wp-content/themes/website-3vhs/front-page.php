@@ -99,22 +99,22 @@
     <!--===================-->
     <div class="rosters">
         <div class="boys">
-            <a href="/boys">
+            <a href="/roster-boys">
                 <div class="boys-container container">
                     <div class="konten" data-aos="fade-right" data-aos-delay="250" data-aos-anchor=".boys .gambar" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-out-quint">
                         <h2>Boys</h2>
                     </div>
                     <div class=" gambar" data-aos="fade-right" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-out-quint">
-                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/players-boys/kenny-1.png" alt="kenny 1">
+                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/players-boys/andra-1.png" alt="andra 1">
                     </div>
                 </div>
             </a>
         </div>
         <div class="girls">
-            <a href="/girls">
+            <a href="/roster-girls">
                 <div class="girls-container container">
                     <div class="gambar" data-aos="fade-left" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-out-quint">
-                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/players-boys/kenny-1.png" alt="kenny 1">
+                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/players-girls/nella-1.png" alt="nella 1">
                     </div>
                     <div class="konten" data-aos="fade-left" data-aos-delay="250" data-aos-anchor=".girls .gambar" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-out-quint">
                         <h2>Girls</h2>
