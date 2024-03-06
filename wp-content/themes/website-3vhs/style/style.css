@@ -1,6 +1,3 @@
-/* @import url('https://fonts.cdnfonts.com/css/helvetica-neue-55'); */
-@import url('https://db.onlinewebfonts.com/c/9bfe4a99593cfe1964b1c6b7c55c254e?family=Compacta+ICG');
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
     padding: 0;
@@ -34,8 +31,8 @@
     --text-9xl:128px;
 
     /* font family */
-    --compacta: "Compacta ICG", cursive;
-    --helvetica-neue: 'Helvetica Neue', sans-serif;
+    --compacta: "Compacta", sans-serif;
+    --helvetica-neue: 'Helvetica', sans-serif;
     --roboto-condensed : "Roboto Condensed", sans-serif;
 
     /* easing */
@@ -205,6 +202,7 @@ nav .nav-container{
     color: var(--putih);
 
     text-transform: uppercase;
+    white-space: nowrap;
 }
 .mainhero .konten .konten-box p{
     font-size: var(--text-normal);
@@ -220,7 +218,7 @@ nav .nav-container{
 
     padding: 16px 50px ;
 
-    font-family: var(--roboto-condensed);
+    font-family: var(--helvetica-neue);
     font-size: var(--text-xl);
     font-weight: 600;
     color: var(--putih);
@@ -921,3 +919,102 @@ footer {
         height: 50%;
     }
 }
+
+
+/*=====================================================================*/
+/*==================== RESPONSIVE MAX-WIDTH 992px ====================*/
+/*=====================================================================*/
+
+@media (max-width: 992px) {
+    /*=================================================*/
+    /*==================== BERANDA ====================*/
+    /*=================================================*/
+
+    /*====================*/
+    /*===== MAINHERO =====*/
+    /*====================*/
+    .mainhero .bg-konten-box{
+        width: 100%;
+    }
+    .mainhero .konten .konten-box{
+        width: 100%;
+    }
+    .mainhero .konten .konten-box h1{
+        font-size: 60px;
+    }
+    .mainhero .konten .konten-box h2{
+        margin-bottom: 32px;
+        font-size: 60px;
+    }
+    .mainhero .konten .konten-box p{
+        display: none;
+    }
+    .button-orange{
+        padding: 8px 16px;
+        font-size: var(--text-normal);
+    }
+    .mainhero .gambar{
+        display: none;
+    }
+
+    /*=================*/
+    /*===== ABOUT =====*/
+    /*=================*/
+
+    .home-about .bg-gambar{
+        display: none;
+    }
+
+    .home-about .about-container{
+        flex-direction: column;
+
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .home-about .about-container .gambar{
+        width: 100%;
+
+        background-color: var(--orange1);
+
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+    .home-about .about-container .gambar img{
+        width: 25%;
+    }
+    .home-about .about-container .konten{
+        width: 100%;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+    .home-about .about-container .konten h2{
+        font-size: var(--text-5xl);
+    }
+    .home-about .about-container .konten .data .item h3{
+        font-size: var(--text-3xl);
+    }
+    .home-about .about-container .konten .data .item h4{
+        font-size: var(--text-normal);
+    }
+
+
+    /*===========================*/
+    /*===== DIVIDER ROSTERS =====*/
+    /*===========================*/
+
+    .divider-rosters span{
+        font-family: var(--compacta);
+        font-size: 24px;
+        color: var(--orange1);
+        display: inline-block;
+        animation: marquee 15s linear infinite;
+
+    }
+
+
+
+}
+

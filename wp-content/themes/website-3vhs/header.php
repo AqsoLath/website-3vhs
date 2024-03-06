@@ -5,6 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style type="text/css">
+        @font-face{
+            font-family: "Compacta";
+            src:  url("<?php echo get_template_directory_uri(); ?>/assets/fonts/compacta/compacta.ttf");
+        }
+
+        @font-face{
+            font-family: "Helvetica";
+            src:  url("<?php echo get_template_directory_uri(); ?>/assets/fonts/helvetica-neue/HelveticaNeueRoman.otf");
+        }
+
+        /*body{
+            font-family: "Compacta ICG" !important;
+        }*/
+    </style>
+
     <?php wp_head(); ?>
 </head>
 
