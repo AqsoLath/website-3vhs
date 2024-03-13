@@ -63,6 +63,7 @@
         <div class="about-container container">
             <div class="gambar">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-smk3.png" alt="Logo SMKN 3 Kota Bekasi">
+                <h2>SMK NEGERI 3 KOTA BEKASI</h2>
             </div>
             <div class="konten">
                 <h2>We Are Dynamic Basketball Club of <span>SMKN 3 Kota Bekasi</span></h2>
@@ -100,7 +101,7 @@
     <div class="rosters">
         <div class="boys">
             <a href="/roster-boys">
-                <div class="boys-container container">
+                <div class="boys-container container" style="overflow: hidden">
                     <div class="konten" data-aos="fade-right" data-aos-delay="250" data-aos-anchor=".boys .gambar" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-out-quint">
                         <h2>Boys</h2>
                     </div>
@@ -112,7 +113,7 @@
         </div>
         <div class="girls">
             <a href="/roster-girls">
-                <div class="girls-container container">
+                <div class="girls-container container" style="overflow: hidden">
                     <div class="gambar" data-aos="fade-left" data-aos-anchor-placement="top-bottom" data-aos-easing="ease-in-out-quint">
                         <img src="<?php echo get_template_directory_uri() ?>/assets/images/players-girls/nella-1.png" alt="nella 1">
                     </div>
