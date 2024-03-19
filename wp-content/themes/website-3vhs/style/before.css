@@ -1,3 +1,6 @@
+/* @import url('https://fonts.cdnfonts.com/css/helvetica-neue-55'); */
+@import url('https://db.onlinewebfonts.com/c/9bfe4a99593cfe1964b1c6b7c55c254e?family=Compacta+ICG');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
     padding: 0;
@@ -31,8 +34,8 @@
     --text-9xl:128px;
 
     /* font family */
-    --compacta: "Compacta", sans-serif;
-    --helvetica-neue: 'Helvetica', sans-serif;
+    --compacta: "Compacta ICG", cursive;
+    --helvetica-neue: 'Helvetica Neue', sans-serif;
     --roboto-condensed : "Roboto Condensed", sans-serif;
 
     /* easing */
@@ -53,9 +56,9 @@ a{
     text-decoration: none !important;
 }
 
-/*=============================*/
-/*===== COMPONENT PACKAGE =====*/
-/*=============================*/
+/=============================/
+/===== COMPONENT PACKAGE =====/
+/=============================/
 
 [data-aos] {
   body[data-aos-easing="ease-in-out-quint"] &,
@@ -66,9 +69,9 @@ a{
 
 
 
-/*==================*/
-/*===== NAVBAR =====*/
-/*==================*/
+/==================/
+/===== NAVBAR =====/
+/==================/
 nav{
     position: fixed;
     top: 0;
@@ -79,7 +82,7 @@ nav{
     width: 100%;
     /* height: 50px; */
 
-    background-color:var(--biru2);
+    background-color:var(--biru1);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -147,75 +150,55 @@ nav .nav-container{
     width: 100%;
 }
 
+
 .containerMobile{
     display: none;
 }
 
+.navLinks{
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 100dvh;
+    background-color: var(--biru1);
+}
 
+.none{
+    display: none;
+}
 
 .containerMobile img{
     width: 30px;
 }
 
 @media (max-width: 500px) {
-    
     .nav-links{
         display: none;
     }
     .containerMobile{
         display: block;
     }
-    
+
     .gambar{
         display: none;
     }
-    
+
     nav{
         height: 70px;
     }
-    
+
     .navLinks{
         font-family: var(--compacta);
-        position: absolute;
-        top: 70px;
-        right: 0;
-        width: 0;
-        height: calc(100vh - 70px);
-        background-color: var(--biru1);
-        padding: 0;
-        transition: 0.5s;
+        padding: 30px;
     }
 
-    .nav-list li a:hover {
-        color: var(--orange1);
-    }
-    .w50 {
-        width: 50%;
-    }
-    
-    .opaset{
-        opacity: 2;
-    }
-    
-    .nav-list-container{
-        padding-right: 30px;
-        width: 100%;
-    }
-
-    .border{
-        border-radius: 5px;
-        border: var(--putih) 2px ;
-    }
-    
     .nav-list{
-        font-family: var(--compacta);
         margin-top: 40px;
         list-style-type: none;
         display: flex;
         flex-direction: column;
         gap: 10px;
     }
-    
     
     .nav-list li {
         font-weight: 200;
@@ -248,29 +231,18 @@ nav .nav-container{
         
     }
 
-    nav .nav-logo{
-        width: 32px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-left: 20px;
-    }
-
-    
-
     
 }
 
 
 
+/=================================================/
+/==================== BERANDA ====================/
+/=================================================/
 
-/*=================================================*/
-/*==================== BERANDA ====================*/
-/*=================================================*/
-
-/*====================*/
-/*===== MAINHERO =====*/
-/*====================*/
+/====================/
+/===== MAINHERO =====/
+/====================/
 
 .mainhero{
     position: relative;
@@ -280,7 +252,7 @@ nav .nav-container{
 
     padding: 32px 16px;
 
-    background-color: var(--biru1);
+    background-color: var(--biru2);
 }
 .mainhero .bg-konten-box{
     position: absolute;
@@ -316,7 +288,6 @@ nav .nav-container{
     color: var(--putih);
 
     text-transform: uppercase;
-    white-space: nowrap;
 }
 .mainhero .konten .konten-box p{
     font-size: var(--text-normal);
@@ -332,7 +303,7 @@ nav .nav-container{
 
     padding: 16px 50px ;
 
-    font-family: var(--helvetica-neue);
+    font-family: var(--roboto-condensed);
     font-size: var(--text-xl);
     font-weight: 600;
     color: var(--putih);
@@ -396,9 +367,70 @@ nav .nav-container{
     object-position: top;
 }
 
-/*=================*/
-/*===== ABOUT =====*/
-/*=================*/
+@media (max-width: 500px) {
+
+    .bg-konten-box{
+        display: none;
+    }
+
+    .mainhero .konten .konten-box h1 {
+        font-size: 60px;
+
+    }
+
+    .mainhero .konten .konten-box h2 {
+        font-size: 60px;
+        width: 300px;
+    }
+
+    .konten-box p {
+        display: none;
+        
+    }
+
+    .button-orange{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 135px;
+        height: 36px;
+        font-size: 15px;
+        padding: 0  ;
+    }
+
+    .button-orange div{
+        width: 105px;
+        line-height: 36px
+    }
+
+    .mainhero{
+        padding: 32px 0px;
+        height: 243px;
+    }
+
+    .konten-box{
+        display: flex;
+        flex-direction: column;
+        row-gap:1px;
+    }
+
+    .about-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bg-gambar{
+        display: none;
+    }
+
+    .home-about .about-container .gambar img{
+        width: 33px;
+    }
+}
+
+/=================/
+/===== ABOUT =====/
+/=================/
 
 .home-about {
     position: relative;
@@ -429,23 +461,15 @@ nav .nav-container{
     padding-top: 120px;
     padding-bottom: 120px;
 }
-.home-about .about-container .gambar{
+.home-about .about-container  .gambar-logo{
     width: 35%;
 
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.home-about .about-container .gambar img{
+.home-about .about-container  .gambar-logo img{
     width: 100%;
-}
-.home-about .about-container .gambar h2{
-    display: none;
-    margin: 0;
-
-    font-family: var(--compacta);
-    font-size: var(--text-3xl);
-    color: var(--putih);
 }
 
 .home-about .about-container .konten{
@@ -495,9 +519,45 @@ nav .nav-container{
     font-style: italic;
 }
 
-/*===========================*/
-/*===== DIVIDER ROSTERS =====*/
-/*===========================*/
+@media (max-width: 500px) {
+
+    .about-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bg-gambar{
+        display: none;
+    }
+
+    .home-about .about-container  .gambar-logo img{
+        width: 33px;
+    }
+
+    .home-about .about-container  .gambar-logo{
+        display: flex;
+        color: var(--putih);
+        width: 100VW;
+        background-color: var(--orange1);
+        height: 56px;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .home-about .about-container  .gambar-logo h4{
+        font-size: var(--text-3xl) ;
+        font-weight: 400;
+        font-family: var(--compacta);
+    }
+
+    .home-about .about-container{
+        padding: 0px 12PX;
+    }
+}
+
+/===========================/
+/===== DIVIDER ROSTERS =====/
+/===========================/
 
 .divider-rosters{
     /* padding: 24px 0; */
@@ -533,9 +593,9 @@ nav .nav-container{
     }
 }
 
-/*===================*/
-/*===== ROSTERS =====*/
-/*===================*/
+/===================/
+/===== ROSTERS =====/
+/===================/
 
 .rosters .boys-container{
     display: flex;
@@ -644,9 +704,9 @@ nav .nav-container{
 }
 
 
-/*======================*/
-/*===== INTERESTED =====*/
-/*======================*/
+/======================/
+/===== INTERESTED =====/
+/======================/
 
 .interested-join .interested{
     background-color: var(--orange1);
@@ -687,16 +747,16 @@ nav .nav-container{
 
 
 
-/*=================================================*/
-/*==================== ROSTERS ====================*/
-/*=================================================*/
+/=================================================/
+/==================== ROSTERS ====================/
+/=================================================/
 main#rosters-boys{
     background-color: var(--biru1);
 }
 
-/*=========================*/
-/*===== ROSTERS LINKS =====*/
-/*=========================*/
+/=========================/
+/===== ROSTERS LINKS =====/
+/=========================/
 .rosters-links{
     padding: 24px 0;
 }
@@ -705,8 +765,6 @@ main#rosters-boys{
     align-items: center;
 }
 .rosters-links .links-wrapper a{
-    padding: 0 16px;
-
     font-family: var(--compacta);
     font-size: 150px;
     color: var(--putih);
@@ -726,9 +784,9 @@ main#rosters-boys{
 
 
 
-/*=========================*/
-/*===== ROSTERS TITLE =====*/
-/*=========================*/
+/=========================/
+/===== ROSTERS TITLE =====/
+/=========================/
 .rosters-title{
     padding-top: 100px;
     padding-bottom: 100px;
@@ -745,9 +803,9 @@ main#rosters-boys{
 }
 
 
-/*===========================*/
-/*===== ROSTERS PLAYERS =====*/
-/*===========================*/
+/===========================/
+/===== ROSTERS PLAYERS =====/
+/===========================/
 
 .rosters-players{
     /* padding-top: 148px; */
@@ -878,7 +936,7 @@ main#rosters-boys{
     font-weight: 700;
 }
 
-/*===== Pas dihover =====*/
+/===== Pas dihover =====/
 
 .rosters-players .players-wrapper .item:hover{
     background-color: var(--biru1);
@@ -909,9 +967,9 @@ main#rosters-boys{
 }
 
 
-/*============================*/
-/*===== PLAYERS POSITION =====*/
-/*============================*/
+/============================/
+/===== PLAYERS POSITION =====/
+/============================/
 
 .players-position{
     padding-top: 70px;
@@ -943,35 +1001,15 @@ main#rosters-boys{
     color: var(--putih);
 }
 .players-position .position-wrapper img{
-    margin-top: -20px;
     width: 100%;
 }
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*==================*/
-/*===== FOOTER =====*/
-/*==================*/
+/==================/
+/===== FOOTER =====/
+/==================/
 
 footer {
     background-color: var(--biru2);
@@ -1035,338 +1073,12 @@ footer {
 
 
 
-/*=====================================================================*/
-/*==================== RESPONSIVE MAX-WIDTH 1200px ====================*/
-/*=====================================================================*/
+/=====================================================================/
+/==================== RESPONSIVE MAX-WIDTH 1200px ====================/
+/=====================================================================/
 
 @media (max-width: 1200px) {
     .rosters-players .players-wrapper .item .atas .foto-profil{
         height: 50%;
-    }
-}
-
-
-/*=====================================================================*/
-/*==================== RESPONSIVE MAX-WIDTH 992px ====================*/
-/*=====================================================================*/
-
-@media (max-width: 992px) {
-        
-    main{
-        margin-top: 40px;
-        min-height: calc(100vh - 40px);
-    }
-    /*=================================================*/
-    /*==================== BERANDA ====================*/
-    /*=================================================*/
-
-    /*====================*/
-    /*===== MAINHERO =====*/
-    /*====================*/
-    .mainhero .bg-konten-box{
-        width: 100%;
-    }
-    .mainhero .konten .konten-box{
-        width: 100%;
-        padding: 16px 8px;
-    }
-    .mainhero .konten .konten-box h1{
-        font-size: 70px;
-    }
-    .mainhero .konten .konten-box h2{
-        margin-bottom: 32px;
-        font-size: 70px;
-    }
-    .mainhero .konten .konten-box p{
-        display: none;
-    }
-    .button-orange{
-        padding: 8px 16px;
-        font-size: var(--text-normal);
-    }
-    .mainhero .gambar{
-        display: none;
-    }
-
-    /*=================*/
-    /*===== ABOUT =====*/
-    /*=================*/
-
-    .home-about .bg-gambar{
-        display: none;
-    }
-
-    .home-about .about-container{
-        flex-direction: column;
-
-        padding-top: 0;
-        padding-bottom: 0;
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-    .home-about .about-container .gambar{
-        justify-content: flex-start;
-        width: 100%;
-
-        background-color: var(--orange1);
-
-        padding-top: 16px;
-        padding-bottom: 16px;
-        padding-left: 16px;
-        padding-right: 16px;
-    }
-    .home-about .about-container .gambar img{
-        width: 20%;
-    }
-    .home-about .about-container .gambar h2{
-        display: block;
-        margin-left: 16px;
-    }
-    .home-about .about-container .konten{
-        width: 100%;
-        padding-top: 32px;
-        padding-bottom: 32px;
-    }
-    .home-about .about-container .konten h2{
-        font-size: var(--text-5xl);
-    }
-    .home-about .about-container .konten .data .item h3{
-        font-size: var(--text-3xl);
-    }
-    .home-about .about-container .konten .data .item h4{
-        font-size: var(--text-normal);
-    }
-
-
-    /*===========================*/
-    /*===== DIVIDER ROSTERS =====*/
-    /*===========================*/
-
-    .divider-rosters span{
-        font-family: var(--compacta);
-        font-size: 24px;
-        color: var(--orange1);
-        display: inline-block;
-        animation: marquee 15s linear infinite;
-
-    }
-
-        
-    /*===================*/
-    /*===== ROSTERS =====*/
-    /*===================*/
-    .rosters .boys-container{
-        flex-direction: column;
-    }
-    .rosters .boys .gambar{
-        position: relative;
-        margin-top: -10%;
-    }
-    .rosters .girls-container{
-        flex-direction: column-reverse;
-    }
-    .rosters .girls .gambar{
-        position: relative;
-        margin-top: -10%;
-    }
-    
-    .rosters .gambar,
-    .rosters .konten{
-        width: 100%;
-        /* height: 100%; */
-        
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .rosters .gambar img{
-        position: relative;
-        /* height: 100%; */
-        width: 50%;
-    }
-    .rosters .boys .gambar img{
-        left: 0;
-    }
-    .rosters .girls .gambar img{
-        right: 0;
-    }
-
-    .rosters .boys .konten h2,
-    .rosters .girls .konten h2{
-        font-family: var(--compacta);
-        font-size: 240px;
-    }
-
-        
-    /*======================*/
-    /*===== INTERESTED =====*/
-    /*======================*/
-    .interested-join .interested h3{
-        font-size: 64px;
-    }
-    .interested-join .join h3{
-        font-size: var(--text-2xl);
-    }
-    .interested-join .join a{
-        font-size: var(--text-4xl);
-    }
-
-
-    
-    /*=================================================*/
-    /*==================== ROSTERS ====================*/
-    /*=================================================*/
-
-    /*=========================*/
-    /*===== ROSTERS LINKS =====*/
-    /*=========================*/
-    .rosters-links{
-        padding: 16px 0;
-    }
-    .rosters-links .links-wrapper a{
-        font-size: 60px;
-        padding: 0 8px;
-    }
-
-    .rosters-links .links-wrapper .divider{
-        margin: 0 8px;
-    
-        height: 50px;
-        width: 8px;
-    }
-
-    
-    /*=========================*/
-    /*===== ROSTERS TITLE =====*/
-    /*=========================*/
-    .rosters-title{
-        padding-top: 32px;
-        padding-bottom: 32px;
-    }
-    .rosters-title h2{
-        font-size: var(--text-4xl);
-    }
-
-    
-    /*===========================*/
-    /*===== ROSTERS PLAYERS =====*/
-    /*===========================*/
-
-    .rosters-players .players-wrapper{
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .rosters-players .players-wrapper .item .atas .konten h4{
-        font-size: 120px;
-    }
-    .rosters-players .players-wrapper .item .atas .konten .detail .detail-item h5{
-        font-size: 16px;
-    }
-    .rosters-players .players-wrapper .item .atas .konten .detail .detail-item h6{
-        font-size: 16px;
-    }
-    .rosters-players .players-wrapper .item .atas .foto-profil{
-        height: 70%;
-    }
-    .rosters-players .players-wrapper .item .atas .logo-sevory{
-        width: 48px;
-    }
-    .rosters-players .players-wrapper .item .bawah h3{
-        font-size: var(--text-2xl);
-    }
-
-    
-    /*============================*/
-    /*===== PLAYERS POSITION =====*/
-    /*============================*/
-
-    .players-position{
-        padding-top: 32px;
-        padding-bottom: 32px;
-    }
-        
-    .players-position h2{
-        margin-bottom: 8px;
-        font-size: var(--text-xl);
-    }
-    .players-position .position-wrapper{
-        flex-direction: column;
-        align-items: center;
-    }   
-
-    .players-position .position-wrapper .offense,
-    .players-position .position-wrapper .defense{
-        width: 80%;
-        margin-top:16px;
-    }
-    .players-position .position-wrapper h3{
-        font-size: var(--text-xl);
-    }
-    
-}
-
-
-@media (max-width: 576px) {
-    
-    /*=================================================*/
-    /*==================== BERANDA ====================*/
-    /*=================================================*/
-
-    /*====================*/
-    /*===== MAINHERO =====*/
-    /*====================*/
-    
-    .mainhero .konten .konten-box h1{
-        font-size: 50px;
-    }
-    .mainhero .konten .konten-box h2{
-        margin-bottom: 32px;
-        font-size: 50px;
-    }
-
-    
-    /*===================*/
-    /*===== ROSTERS =====*/
-    /*===================*/
-
-    .rosters .boys .gambar{
-        margin-top: -20%;
-    }
-    .rosters .girls .gambar{
-        margin-top: -20%;
-    }
-    .rosters .gambar img{
-        width: 80%;
-    }
-    .rosters .boys .konten h2,
-    .rosters .girls .konten h2{
-        font-family: var(--compacta);
-        font-size: 180px;
-    }
-
-    
-    /*=================================================*/
-    /*==================== ROSTERS ====================*/
-    /*=================================================*/
-    
-    /*==========================*/
-    /*===== ROSTER PLAYERS =====*/
-    /*==========================*/
-    .rosters-players .players-wrapper .item .atas .konten h4{
-        font-size: 80px;
-    }
-    .rosters-players .players-wrapper .item .atas .konten .detail .detail-item h5{
-        font-size: 10px;
-    }
-    .rosters-players .players-wrapper .item .atas .konten .detail .detail-item h6{
-        font-size: 10px;
-    }
-    .rosters-players .players-wrapper .item .atas .logo-sevory{
-        width: 32px;
-    }
-    .rosters-players .players-wrapper .item .bawah h3{
-        font-size: var(--text-base);
     }
 }
