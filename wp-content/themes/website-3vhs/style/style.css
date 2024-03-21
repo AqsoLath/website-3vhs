@@ -919,6 +919,34 @@ footer {
     height: 50px;
   }
 
+  @media (max-width: 500px) {
+    footer .containerFooter .sparing h1 {
+        font-size: var(--text-xl);
+        line-height: 20px;
+    }
+
+    footer .containerFooter .contact *  {
+        font-size: var(--text-xs);
+    }
+
+    .sparing{
+        height: 173px;
+        justify-content: space-evenly;
+    }
+    .contact{
+        height: 80px;
+    }
+
+    .containerFooter{
+        justify-content: space-around;
+    }
+
+    .contact h2{
+        margin-top: 50px;
+        justify-content: space-evenly;
+    }
+
+  }
 
 
 /*=====================================================================*/
